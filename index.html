@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Práctica HTML5, CSS3 y JS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="author" content="Miguel Ángel Muñoz Viejo">
+	
+	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/grid.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<main>
+		<section id="header" class="container-fluid header-background">
+			<div class="row container">
+				<div class="col-md-4 header__logo">
+					<h1>Miguel Ángel <b>Muñoz Viejo</b></h1>
+				</div>
+				<div class="col-md-8 header__menu hidden-xs hidden-sm">
+					<nav>
+						<ul>
+							<li><a href="#quien-soy"><i class="fa fa-user-circle" aria-hidden="true"></i> Quién soy</a></li>
+							<li><a href="#estudios"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Formación / <i class="fa fa-briefcase" aria-hidden="true"></i> Experiencia</a></li>
+							<li><a href="#sobre-mi"><i class="fa fa-futbol-o" aria-hidden="true"></i> Sobre mi</a></li>
+							<li><a href="#contacto"><i class="fa fa-paper-plane" aria-hidden="true"></i> Contacto</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</section>
+		<section id="portada">
+			<div class="row container portada__frase">
+				<p>Lo más importante para triunfar es perseguir tus sueños hasta que no te quede aliento.</p>
+			</div>
+			<div class="row portada__next">
+				<a href="#quien-soy">
+					<div>Seguir leyendo</div>
+					<div class="portada__next-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+				</a>
+			</div>
+		</section>
+		<section id="quien-soy" class="aire">
+			<div class="row container">
+				<div class="col-md-6 quien-soy__image">
+					<img src="http://highgradelab.com/stash/vcard/wp-content/uploads/sites/60/2017/05/portrait.jpg" alt="">
+				</div>
+				<div class="col-md-6 quien-soy__text">
+					<h2>Miguel Ángel <br><b>Muñoz Viejo</b></h2>
+					<h3>Full Stack Developer</h3>
+					<p>Socio fundador de <a href="http://devialia.com/" target="_blank" title="Devialia Solutions" alt="Devialia Solutions">Devialia Solutions</a> cofundador de <a href="https://raiz.es/" target="_blank" title="Raíz Grupo Digital" alt="Raíz Grupo Digital">Raíz Grupo Digital</a>, formado como ingeniero informático por la UCM y especialista en tecnologías web. He desarrollado y dirigido proyectos de todos los tamaños para clientes de múltiples sectores y he trabajado con multitud de tecnologías, lo que el proyecto requiera.
+					Dirijo el departamento técnico y los proyectos de desarrollo tanto de Devialia como de Raíz y soy del pensamiento de que para dirigir hay que saber y, para enseñar, todavía más.</p>
+				</div>
+			</div>
+		</section>
+		<section id="estudios" class="aire">
+			<div class="container">
+				<h2>Formación / <b>Experiencia</b></h2>
+				<div class="filtro-timeline">
+					<ul>
+						<li class="filtro-timeline__formacion"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Formación</li>
+						<li class="filtro-timeline__experiencia"><i class="fa fa-briefcase" aria-hidden="true"></i> Experiencia</li>
+					</ul>
+				</div>
+			</div>
+			<div class="estudios-structure container">
+				<article class="row estudios__item experiencia">
+					<div class="col-sm-6 estudios__item--content">
+						<div class="estudios__item--content__marcador"></div>
+						<div class="estudios__item--content__text">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+							<h3>Socio Fundador</h3>
+							<h4>Raíz Grupo Digital</h4>
+							<p class="estudios__item--content__text--fecha">Ene 2018 - Actualidad</p>
+							<p>Raíz es una red de agencias boutique que ha unido sus fuerzas para ofrecer un servicio 360 en el mercado digital. Contenidos, SEO, analítica y PPC, programación y diseño y social ads y email marketing. Yo soy socio fundador de Raíz que a su vez integra a mi empresa (Devialia) de la que soy CEO y que se dedica a la programación y diseño.</p>
+						</div>
+					</div>
+					<div class="col-sm-6 estudios__item--date">
+						<div class="estudios__item--date__marcador"></div>
+						<div class="estudios__item--date__content"><p>Ene 2018 - Actualidad</p></div>
+					</div>
+				</article>
+				<article class="row estudios__item formacion">
+					<div class="col-sm-6 estudios__item--date">
+						<div class="estudios__item--date__marcador"></div>
+						<div class="estudios__item--date__content"><p>Nov 2017 - Actualidad</p></div>
+					</div>
+					<div class="col-sm-6 estudios__item--content">
+						<div class="estudios__item--content__marcador"></div>
+						<div class="estudios__item--content__text">
+							<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+							<h3>Web Development Bootcamp</h3>
+							<h4>KeepCoding</h4>
+							<p class="estudios__item--content__text--fecha">Nov 2017 - Actualidad</p>
+							<p>Titulación doble full stack en desarrollo web con NodeJs, JavaScript, Python, micro servicios, desarrollo frontend, gestión repositorios git, Express, AngularJs, Mongo DB, Django...</p>
+						</div>
+					</div>
+				</article>
+				<article class="row estudios__item experiencia">
+					<div class="col-sm-6 estudios__item--content">
+						<div class="estudios__item--content__marcador"></div>
+						<div class="estudios__item--content__text">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+							<h3>CEO</h3>
+							<h4>Devialia</h4>
+							<p class="estudios__item--content__text--fecha">Nov 2016 - Actualidad</p>
+							<p>Soy CEO y socio fundador de Devialia, empresa dedicada a la programación y diseño en entorno web y dispositivos móviles.</p>
+						</div>
+					</div>
+					<div class="col-sm-6 estudios__item--date">
+						<div class="estudios__item--date__marcador"></div>
+						<div class="estudios__item--date__content"><p>Nov 2016 - Actualidad</p></div>
+					</div>
+				</article>
+				<article class="row estudios__item experiencia">
+					<div class="col-sm-6 estudios__item--date">
+						<div class="estudios__item--date__marcador"></div>
+						<div class="estudios__item--date__content"><p>Abr 2016 - Nov 2016</p></div>
+					</div>
+					<div class="col-sm-6 estudios__item--content">
+						<div class="estudios__item--content__marcador"></div>
+						<div class="estudios__item--content__text">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+							<h3>Director de desarrollo de producto</h3>
+							<h4>Jourbrand</h4>
+							<p class="estudios__item--content__text--fecha">Abr 2016 - Nov 2016</p>
+							<p>Trabajé en Jourbrand como director de desarrollo de producto dirigiendo a los equipos de programación y diseño, y gestionando los diferentes proyectos, elaborando las planificaciones y coordinando mis equipos con los equipos de analítica, contenidos y SEO.</p>
+						</div>
+					</div>
+				</article>
+				<article class="row estudios__item experiencia">
+					<div class="col-sm-6 estudios__item--content">
+						<div class="estudios__item--content__marcador"></div>
+						<div class="estudios__item--content__text">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+							<h3>Desarrollador de software web senior</h3>
+							<h4>Grupo ADSLZone</h4>
+							<p class="estudios__item--content__text--fecha">Ene 2016 - Abr 2016</p>
+						</div>
+					</div>
+					<div class="col-sm-6 estudios__item--date">
+						<div class="estudios__item--date__marcador"></div>
+						<div class="estudios__item--date__content"><p>Ene 2016 - Abr 2016</p></div>
+					</div>
+				</article>
+				<article class="row estudios__item formacion">
+					<div class="col-sm-6 estudios__item--date">
+						<div class="estudios__item--date__marcador"></div>
+						<div class="estudios__item--date__content"><p>Sep 2011 - Jun 2016</p></div>
+					</div>
+					<div class="col-sm-6 estudios__item--content">
+						<div class="estudios__item--content__marcador"></div>
+						<div class="estudios__item--content__text">
+							<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+							<h3>Ingeniero Informático</h3>
+							<h4>Universidad Complutense de Madrid</h4>
+							<p class="estudios__item--content__text--fecha">Sep 2011 - Jun 2016</p>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section id="sobre-mi" class="aire">
+			<div class="row container">
+				<div class="col-md-6 sobre-mi__text">
+					<h2>Sobre <br><b>Mi</b></h2>
+					<p>Emprendedor de nacimiento y friki de la vida, me puedo pasar horas e incluso días pegado a un ordenador (muchas Euskal y Campus party y fast coding) aprendiendo nuevas cosas o desarrollando nuevos proyectos. Mi frikismo no solo se queda en lo profesional, mi casa está llena de drones, robot limpiador, Raspberry, domótica… me vuelve loco la tecnología.
+					He sido muchas cosas en mi vida pero encontré mi pasión en el desarrollo web y desde entonces no paro de buscar nuevas cosas que aprender y nuevos retos que afrontar.</p>
+					<p>Si me preguntas por mis hobbies, me encontrarás entre semana en alguna pista de pádel y en fin de semana en algún campo de airsoft dando tiros a lo loco.</p>
+				</div>
+				<div class="col-md-6 sobre-mi__video">
+					<video width="100%" controls autoplay loop>
+						<source src="./video/nature.mp4" type="video/mp4">
+						Tu explorador no soporta la etiqueta vídeo
+					</video>
+				</div>
+			</div>
+		</section>
+		<section id="contacto" class="aire">
+			<div class="row container">
+				<div class="col-md-6 contacto-text">
+					<h2>Nos tomamos <br><b>un café?</b></h2>
+					<p>Aquí me tienes para lo que necesites, hablar de negocios, compartir conocimientos, impartir una formación, etc. Nos tomamos un café y estudiamos los detalles. Te espero!</p>
+					<p><b>Email:</b> <a href="mailto:miguel@devialia.com">miguel@devialia.com</a></p>
+					<p><b>Telf.:</b> <a href="telf:696984784">696 984 784</a></p>
+				</div>
+				<div class="col-md-6 contacto-formulario">
+					<form name="contacto-formulario__form"  action="" novalidate>
+						<div class="form-group row">
+							<div class="col-sm-6 name-field">
+								<input type="text" name="name" id="name" placeholder="Jack Ryan" required>
+								<small class="error-campo error-name"></small>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="email" id="email" placeholder="email@to.com" required>
+								<small class="error-campo error-email"></small>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-6">
+								<input type="text" name="telf" id="telf" placeholder="915554433">
+								<small class="error-campo error-telf"></small>
+							</div>
+							<div class="col-sm-6">
+								<select name="conocido" id="conocido">
+									<option value="linkedin">Linkedin</option>
+									<option value="google">Google</option>
+									<option value="facebook">Facebook</option>
+									<option value="boca">Boca a boca</option>
+									<option value="otros">Otros</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-xs-12">
+								<textarea name="otros-text" id="otros-text" rows="5" placeholder="Indícame cómo me has conocido, me será muy útil..."></textarea>
+								<small class="error-campo error-otros"></small>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-xs-12">
+								<textarea name="message" id="message" rows="10" placeholder="Cuéntame..."></textarea>
+								<small class="error-campo error-message"></small>
+							</div>
+						</div>
+						<div class="form-group row submit-group">
+							<div class="col-xs-12">
+								<p class="form-success"></p>
+								<input type="submit" value="Enviar">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section id="menu-small" class="container-fluid hidden-md hidden-lg">
+			<nav>
+				<div class="row">
+					<div class="menu-small__item"><a href="#quien-soy" title="Quién soy" alt="Quién soy"><i class="fa fa-user-circle" aria-hidden="true"></i></a></div>
+					<div class="menu-small__item"><a href="#estudios" title="Formación / Experiencia" alt="Formación / Experiencia"><i class="fa fa-graduation-cap" aria-hidden="true"></i> / <i class="fa fa-briefcase" aria-hidden="true"></i></a></div>
+					<div class="menu-small__item"><a href="#sobre-mi" title="Sobre mi" alt="Sobre mi"><i class="fa fa-futbol-o" aria-hidden="true"></i></a></div>
+					<div class="menu-small__item"><a href="#contacto" title="Contacto" alt="Contacto"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></div>
+				</div>
+			</nav>
+		</section>
+	</main>
+	<script src="./js/ajax.js"></script>
+	<script src="./js/app.js"></script>
+	<script src="./js/form_validation.js"></script>
+</body>
+</html>
